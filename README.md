@@ -1,1 +1,1 @@
-all Spreadly dokumentations!
+all Spreadly documentations!
