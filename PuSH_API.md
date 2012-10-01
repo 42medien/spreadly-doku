@@ -15,9 +15,15 @@ Spread.ly verifies a subscription request by sending an HTTP GET request to the 
     <td>hub.mode</td>
     <td>subscribe</td>
   </tr>
+  <tr>
+    <td>hub.topic</td>
+    <td>the domain/host you try to subscribe to (the url you claimed in the Spread.ly stats)</td>
+  </tr>
+  <tr>
+    <td>hub.challenge</td>
+    <td>A generated, random string that must be echoed by the subscriber to verify the subscription.</td>
+  </tr>
 </table>
-|| hub.topic || the domain/host you try to subscribe to (the url you claimed in the Spread.ly stats) ||
-|| hub.challenge || A generated, random string that must be echoed by the subscriber to verify the subscription. ||
 
 To accept the subscription, you have to confirm that the hub.topic correspond to a pending subscription. If so, the callback url have to respond with an HTTP success (2xx) code with a response body equal to the hub.challenge parameter. If you do not agree with the action, the callback url respond with a 404 "Not Found" response.
 
@@ -37,25 +43,58 @@ The fields:
 
 ## global
 
-|| verb || the type of the action (currently we only support "like") ||
-|| published || the time, the like happend ||
+<table>
+  <tr>
+    <td>verb</td>
+    <td>the type of the action (currently we only support "like")</td>
+  </tr>
+  <tr>
+    <td>published</td>
+    <td>the time, the like happend</td>
+  </tr>
+</table>
 
 ## object
 
 The object represents the like
 
-|| id || the uniqe id of the "like" ||
-|| objectType || the type of the liked object (currently we only support "website") ||
-|| url || the url of the liked website ||
+<table>
+  <tr>
+    <td>id</td>
+    <td>the uniqe id of the "like"</td>
+  </tr>
+  <tr>
+    <td>objectType</td>
+    <td>the type of the liked object (currently we only support "website")</td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td>the url of the liked website</td>
+  </tr>
+</table>
 
 ## target
 
 The claimed domained (see http://spreadly.com/domain_profiles/index).
 
-|| id || the uniqe id of the claimed domain ||
-|| objectType || always "service" ||
-|| url || the url of the claimed ||
-|| host || the host of the claimed ||
+<table>
+  <tr>
+    <td>id</td>
+    <td>the uniqe id of the claimed domain</td>
+  </tr>
+  <tr>
+    <td>objectType</td>
+    <td>always "service"</td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td>the url of the claimed</td>
+  </tr>
+  <tr>
+    <td>host</td>
+    <td>the host of the claimed</td>
+  </tr>  
+</table>
 
 ## JSON example
 
