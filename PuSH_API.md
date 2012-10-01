@@ -1,6 +1,6 @@
 This API is based on the PubSubHubbub Spec.
 
-== verify callback-url ==
+# verify callback-url
 
 In order to prevent an attacker from creating unwanted subscriptions Spread.ly must ensure that the subscriber did indeed want the subscription request.
 
@@ -15,24 +15,24 @@ To accept the subscription, you have to confirm that the hub.topic correspond to
 
 In the PubSubHubbub spec: http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#verifysub
 
-== receive requests ==
+# receive requests
 
 If the callback url is verified, Spread.ly will send an HTTP POST request to this url every time a user likes one of your pages.
 
 In the PubSubHubbub spec: http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#contentdistribution
 
-== data format ==
+# data format
 
 The post has the Content-Type `application/json` and represents a single like.
 
 The fields:
 
-=== global ===
+## global
 
 || verb || the type of the action (currently we only support "like") ||
 || published || the time, the like happend ||
 
-=== object ===
+## object
 
 The object represents the like
 
@@ -40,7 +40,7 @@ The object represents the like
 || objectType || the type of the liked object (currently we only support "website") ||
 || url || the url of the liked website ||
 
-=== target ===
+## target
 
 The claimed domained (see http://spreadly.com/domain_profiles/index).
 
@@ -49,7 +49,7 @@ The claimed domained (see http://spreadly.com/domain_profiles/index).
 || url || the url of the claimed ||
 || host || the host of the claimed ||
 
-=== JSON example ===
+## JSON example
 
 ```json
 {
@@ -74,9 +74,9 @@ The claimed domained (see http://spreadly.com/domain_profiles/index).
 
 see: http://activitystrea.ms/head/json-activity.html
 
-== Simple _callback url_ implementations ==
+# Simple _callback url_ implementations
 
-=== PHP Example ===
+## PHP Example
 
 In PHP, dots and spaces in query parameter names are converted to underscores automatically. So you need to check "hub_mode" instead of "hub.mode". 
 
