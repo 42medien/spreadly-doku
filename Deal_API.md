@@ -2,8 +2,16 @@
 
 # API endpoint
 
-|| endpoint || http://api.spreadly.com/deals ||
-|| method || POST ||
+<table>
+  <tr>
+    <td>endpoint</td>
+    <td>http://api.spreadly.com/deals</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>POST</td>
+  </tr>
+</table>
 
 # authentication
 
@@ -18,7 +26,7 @@ http://api.spreadly.com/deals?access_token=#your_access_key#
 
 A `POST` has the Content-Type `application/json` and represents a single deal.
 
-=== JSON example (coupon type: code) ===
+## JSON example (coupon type: code)
 
 ```json
 {
@@ -56,8 +64,18 @@ The fields:
 
 ## global
 
-|| name || the name of your campain (only visible for the advertiser) || varchar ||
-|| activate || choose if your deal should automatically be activated (`true`) or run some tests and re-check the submitted deals through or admin interface (`false`) for some testing-experience for example || boolean ||
+<table>
+  <tr>
+    <td>name</td>
+    <td>the name of your campain (only visible for the advertiser)</td>
+    <td>varchar</td>
+  </tr>
+  <tr>
+    <td>activate</td>
+    <td>choose if your deal should automatically be activated (`true`) or run some tests and re-check the submitted deals through or admin interface (`false`) for some testing-experience for example</td>
+    <td>boolean</td>
+  </tr>
+</table>
 
 ## motivation
 
