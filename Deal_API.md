@@ -85,12 +85,12 @@ The motivation-part describes your deal and is used to motivate the user to part
 
 <table>
   <tr>
-    <td>title^(1)^</td>
+    <td>title<sup>(1)</sup></td>
     <td>a short popup title</td>
     <td>varchar(255)</td>
   </tr>
   <tr>
-    <td>text^(2)^</td>
+    <td>text<sup>(2)</sup></td>
     <td>a short motivation text</td>
     <td>varchar(500)</td>
   </tr>
@@ -102,22 +102,22 @@ With the spread, you can choose which informations will be shared by the user.
 
 <table>
   <tr>
-    <td>title^(3)^</td>
+    <td>title<sup>(3)</sup></td>
     <td>the title of the share</td>
     <td>varchar(255)</td>
   </tr>
   <tr>
-    <td>text^(4)^</td>
+    <td>text<sup>(4)</sup></td>
     <td>the description of a share</td>
     <td>varchar(500)</td>
   </tr>
   <tr>
-    <td>url^(5)^</td>
+    <td>url<sup>(5)</sup></td>
     <td>the url of the share</td>
     <td>must be valid url</td>
   </tr>
   <tr>
-    <td>img^(6)^</td>
+    <td>img<sup>(6)</sup></td>
     <td>the path to an image</td>
     <td>must be valid url</td>
   </tr>
@@ -144,22 +144,22 @@ The coupon _*code*_:
     <td></td>
   </tr>
   <tr>
-    <td>title^(1)^</td>
+    <td>title<sup>(1)</sup></td>
     <td>the title of your coupon</td>
     <td>varchar(255)</td>
   </tr>
   <tr>
-    <td>text^(2)^</td>
+    <td>text<sup>(2)</sup></td>
     <td>a short text that descripes your coupon</td>
     <td>varchar(500)</td>
   </tr>
   <tr>
-    <td>code^(3)^</td>
+    <td>code<sup>(3)</sup></td>
     <td>the code</td>
     <td>must be valid url</td>
   </tr>
   <tr>
-    <td>redeem_url^(5)^</td>
+    <td>redeem_url<sup>(5)</sup></td>
     <td>a link to a page where the user could redeem the coupon</td>
     <td>varchar(255)</td>
   </tr>
