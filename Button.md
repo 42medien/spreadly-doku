@@ -66,14 +66,6 @@ Optional parameters can enhance the user experience decidedly, by giving you mor
     <td>tags</td>
     <td>You can add one or more comma-separated words as tags to describe e.g. the product category for this button. This is particularly important for deals that are intended for selected categories only.</td>
   </tr>
-  <tr>
-    <td>color</td>
-    <td>You can customize the color scheme of the button by setting a default color. The color must be the six digits hex color without the hash (#), for example: "973765" (this is the default color of the button)</td>
-  </tr>
-  <tr>
-    <td>label</td>
-    <td>The urlencoded label of the button, the default label is "like"</td>
-  </tr>
 </table>
 
 ## Example
@@ -81,7 +73,7 @@ Optional parameters can enhance the user experience decidedly, by giving you mor
 _iFrame_:
 
 ```html
-<iframe src="http://button.spread.ly/?url={url}&social={1|0}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}&label={like}&color={973765}" 
+<iframe src="http://button.spread.ly/?url={url}&social={1|0}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}" 
         style="overflow:hidden; width: 420px; height: 30px; padding: 0px 0;"
         frameborder="0"
         scrolling="no"
@@ -93,7 +85,7 @@ _iFrame_:
 _link_:
 
 ```html
-<a href="http://button.spread.ly/?url={url}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}&color={973765}" 
+<a href="http://button.spread.ly/?url={url}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}" 
    target="_blank"
    rel="like">
   <img src="http://spreadly.com/img/staticbutton.png"
@@ -136,20 +128,12 @@ A complete example how a share button/link could look like. Sample page: http://
     <td>tags</td>
     <td>like,deal,spread,share</td>
   </tr>
-  <tr>
-    <td>color</td>
-    <td>973765</td>
-  </tr>
-  <tr>
-    <td>label</td>
-    <td>share</td>
-  </tr>
 </table>
 
 _iFrame_:
 
 ```html
-<iframe src="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&social=1&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare&color=973765&label=share" 
+<iframe src="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&social=1&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare" 
         style="overflow:hidden; width: 420px; height: 60px; padding: 0px 0;"
         frameborder="0"
         scrolling="no"
@@ -161,7 +145,7 @@ _iFrame_:
 _link_:
 
 ```html
-<a href="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare&color=973765" 
+<a href="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare" 
    target="_blank"
    rel="like">
   <img src="http://spreadly.com/img/staticbutton.png"
