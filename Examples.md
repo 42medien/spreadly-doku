@@ -44,13 +44,13 @@ Now complete the form like that:
     <td>Name</td>
     <td>Spread.ly</td>
   </tr>
-  <td>
+  <tr>
     <td>URL</td>
-    <td>`http://spread.ly/?title=${title}&url=${url}`</td>
+    <td>```http://spread.ly/?title=${title}&url=${url}```</td>
   </tr>
   <tr>
     <td>Icon URL</td>
-    <td>`http://spread.ly/favicon.ico`</td>
+    <td>```http://spread.ly/favicon.ico```</td>
   </tr>
 </table>
 
@@ -69,10 +69,10 @@ Go to "Settings" -> "Sharing", click "Add a new service" and fill out the form w
   </tr>
   <tr>
     <td>Sharing URL</td>
-    <td>`http://spread.ly/?title=%post_title%&tags=%post_tags%&url=%post_full_url%`</td>
+    <td>```http://spread.ly/?title=%post_title%&tags=%post_tags%&url=%post_full_url%```</td>
   </tr>
   <tr>
     <td>Icon URL</td>
-    <td>`http://spread.ly/favicon.ico`</td>
+    <td>```http://spread.ly/favicon.ico```</td>
   </tr>
 </table>
