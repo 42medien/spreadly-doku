@@ -51,7 +51,7 @@ The claimed domained (see http://spreadly.com/domain_profiles/index).
 
 === JSON example ===
 
-{{{
+```json
 {
    "generator":{
       "url":"http://spreadly.com/"
@@ -70,7 +70,7 @@ The claimed domained (see http://spreadly.com/domain_profiles/index).
    },
    "verb":"like"
 }
-}}}
+```
 
 see: http://activitystrea.ms/head/json-activity.html
 
@@ -80,7 +80,7 @@ see: http://activitystrea.ms/head/json-activity.html
 
 In PHP, dots and spaces in query parameter names are converted to underscores automatically. So you need to check "hub_mode" instead of "hub.mode". 
 
-{{{
+```php
 <?php
 $method = $_SERVER['REQUEST_METHOD'];  
 
@@ -103,4 +103,4 @@ if ($method == 'GET' &&
   error_log(print_r(file_get_contents("php://input"), true) . "\n", 3, dirname(__FILE__)."/error.log");
 }
 ?>
-}}}
+```
