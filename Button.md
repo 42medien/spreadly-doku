@@ -19,7 +19,7 @@ Mandatory parameters are the minimum requirement for the button to work. You sho
   </tr>
 </table>
 
-*Example*:
+## Example
 
 _iFrame_:
 
@@ -49,14 +49,34 @@ _link_:
 
 Optional parameters can enhance the user experience decidedly, by giving you more control over how your shared content will look like. If you don't define these parameters, the Spread.ly crawler software will visit your page and will try to determine the most relevant content programmatically.
 
-||title||The title of the shared post. Possible values: urlencoded string literals. Default value: grabbed from Open Graph og:title tag, fallback is HTML title tag.||
-||description||The description text of the shared post. Possible values: urlencoded string literals. Default value: grabbed from Open Graph og:description tag, fallback is HTML description meta tag.||
-||photo||An image from the shared post, e.g. a product image. Possible values: urlencoded image URL. Default value: grabbed from Open Graph og:image tag, fallback is a selection of images scraped from your page (the user hase to choose, in case there are several possibilities).||
-||tags||You can add one or more comma-separated words as tags to describe e.g. the product category for this button. This is particularly important for deals that are intended for selected categories only.||
-||color||You can customize the color scheme of the button by setting a default color. The color must be the six digits hex color without the hash (#), for example: "973765" (this is the default color of the button)||
-||label||The urlencoded label of the button, the default label is "like"||
+<table>
+  <tr>
+    <td>title</td>
+    <td>The title of the shared post. Possible values: urlencoded string literals. Default value: grabbed from Open Graph og:title tag, fallback is HTML title tag.</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>The description text of the shared post. Possible values: urlencoded string literals. Default value: grabbed from Open Graph og:description tag, fallback is HTML description meta tag.</td>
+  </tr>
+  <tr>
+    <td>photo</td>
+    <td>An image from the shared post, e.g. a product image. Possible values: urlencoded image URL. Default value: grabbed from Open Graph og:image tag, fallback is a selection of images scraped from your page (the user hase to choose, in case there are several possibilities).</td>
+  </tr>
+  <tr>
+    <td>tags</td>
+    <td>You can add one or more comma-separated words as tags to describe e.g. the product category for this button. This is particularly important for deals that are intended for selected categories only.</td>
+  </tr>
+  <tr>
+    <td>color</td>
+    <td>You can customize the color scheme of the button by setting a default color. The color must be the six digits hex color without the hash (#), for example: "973765" (this is the default color of the button)</td>
+  </tr>
+  <tr>
+    <td>label</td>
+    <td>The urlencoded label of the button, the default label is "like"</td>
+  </tr>
+</table>
 
-*Example*:
+## Example
 
 _iFrame_:
 
@@ -87,18 +107,44 @@ _link_:
 * Maximum length for the iframe URL including all parameter settings is 2000 characters.
 * At this time there is no usage limitation concerning the number of requests.
 
-== Full Example ==
+# Full Example
 
 A complete example how a share button/link could look like. Sample page: http://spreadly.com
 
-||url||http://spreadly.com/||
-||social||1||
-||title||Spread.ly||
-||description||first choice for social sharing||
-||photo||http://spreadly.com/img/spreadlyicon.jpg||
-||tags||like,deal,spread,share||
-||color||973765||
-||label||share||
+<table>
+  <tr>
+    <td>url</td>
+    <td>http://spreadly.com/</td>
+  </tr>
+  <tr>
+    <td>social</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>Spread.ly</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>first choice for social sharing</td>
+  </tr>
+  <tr>
+    <td>photo</td>
+    <td>http://spreadly.com/img/spreadlyicon.jpg</td>
+  </tr>
+  <tr>
+    <td>tags</td>
+    <td>like,deal,spread,share</td>
+  </tr>
+  <tr>
+    <td>color</td>
+    <td>973765</td>
+  </tr>
+  <tr>
+    <td>label</td>
+    <td>share</td>
+  </tr>
+</table>
 
 _iFrame_:
 
