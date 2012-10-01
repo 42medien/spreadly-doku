@@ -6,8 +6,16 @@ In order to prevent an attacker from creating unwanted subscriptions Spread.ly m
 
 Spread.ly verifies a subscription request by sending an HTTP GET request to the subscriber's callback URL (set through the admin interface). This request has the following query string arguments appended:
 
-|| *key* || *value* ||
-|| hub.mode || subscribe ||
+<table>
+  <tr>
+    <th>key</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>hub.mode</td>
+    <td>subscribe</td>
+  </tr>
+</table>
 || hub.topic || the domain/host you try to subscribe to (the url you claimed in the Spread.ly stats) ||
 || hub.challenge || A generated, random string that must be echoed by the subscriber to verify the subscription. ||
 
