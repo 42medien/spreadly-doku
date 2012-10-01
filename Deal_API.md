@@ -1,4 +1,4 @@
-|| *NOTE: To use the Deal-API you need an Access-Key! You can request yours here: http://spreadly.com/advertiser/dealapi * ||
+**NOTE: To use the Deal-API you need an Access-Key! You can request yours here: http://spreadly.com/advertiser/dealapi **
 
 # API endpoint
 
@@ -133,7 +133,7 @@ With the spread, you can choose which informations will be shared by the user.
 you can choose between three types of coupons.
 
 
-The coupon _*code*_:
+The coupon __**code**__:
 
 <img src="http://spreadly.com/img/coupon_type_code.png" />
 
@@ -187,7 +187,7 @@ The _*download*_ coupon:
 <table>
   <tr>
     <td>type</td>
-    <td>the type is *`download`*</td>
+    <td>the type is **`download`**</td>
     <td></td>
   </tr>
   <tr>
@@ -220,14 +220,14 @@ JSON example:
 [...]
 ```
 
-The _*url*_ coupon:
+The __**url**__ coupon:
 
 <img src="http://spreadly.com/img/coupon_type_url.png" />
 
 <table>
   <tr>
     <td>type</td>
-    <td>the type is *`url`*</td>
+    <td>the type is **`url`**</td>
     <td></td>
   </tr>
   <tr>
