@@ -135,7 +135,7 @@ you can choose between three types of coupons.
 
 The coupon _*code*_:
 
-<img align="right" src="http://spreadly.com/img/coupon_type_code.png" />
+<img src="http://spreadly.com/img/coupon_type_code.png" />
 
 <table>
   <tr>
@@ -184,10 +184,28 @@ The _*download*_ coupon:
 
 <img src="http://spreadly.com/img/coupon_type_download.png" />
 
-|| type || the type is *`download`* ||  ||
-|| title^(1)^ || the title of your coupon || varchar(255) ||
-|| text^(2)^ || a short text that descripes your coupon || varchar(500) ||
-|| url^(3)^ || the download-url || must be valid url ||
+<table>
+  <tr>
+    <td>type</td>
+    <td>the type is *`download`*</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>title<sup>(1)</sup></td>
+    <td>the title of your coupon</td>
+    <td>varchar(255)</td>
+  </tr>
+  <tr>
+    <td>text<sup>(2)</sup></td>
+    <td>a short text that descripes your coupon</td>
+    <td>varchar(500)</td>
+  </tr>
+  <tr>
+    <td>url<sup>(3)</sup></td>
+    <td>the download-url</td>
+    <td>must be valid url</td>
+  </tr>
+</table>
 
 JSON example:
 
@@ -206,10 +224,28 @@ The _*url*_ coupon:
 
 <img src="http://spreadly.com/img/coupon_type_url.png" />
 
-|| type || the type is *`url`* ||  ||
-|| title^(1)^ || the title of your coupon || varchar(255) ||
-|| text^(2)^ || a short text that descripes your coupon || varchar(500) ||
-|| url^(3)^ || the url to your content || must be valid url ||
+<table>
+  <tr>
+    <td>type</td>
+    <td>the type is *`url`*</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>title<sup>(1)</sup></td>
+    <td>the title of your coupon</td>
+    <td>varchar(255)</td>
+  </tr>
+  <tr>
+    <td>text<sup>(2)</sup></td>
+    <td>a short text that descripes your coupon</td>
+    <td>varchar(500)</td>
+  </tr>
+  <tr>
+    <td>url<sup>(3)</sup></td>
+    <td>the url to your content</td>
+    <td>must be valid url</td>
+  </tr>
+</table>
 
 JSON example:
 
@@ -226,7 +262,17 @@ JSON example:
 
 ## billing
 
-|| type || you can choose between the billing types `like` and `media_penetration` || enum(like, media_penetration) ||
-|| target_quantity || the number of likes or media-penetration you want to buy || int ||
+<table>
+  <tr>
+    <td>type</td>
+    <td>you can choose between the billing types `like` and `media_penetration`</td>
+    <td>enum(like, media_penetration)</td>
+  </tr>
+  <tr>
+    <td>target_quantity</td>
+    <td>the number of likes or media-penetration you want to buy</td>
+    <td>int</td>
+  </tr>
+</table>
 
 To get some informations about the pricing, visit http://spreadly.local/advertiser/dealapi oder write an e-mail to marco@ekaabo.com
