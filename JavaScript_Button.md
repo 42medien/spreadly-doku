@@ -16,7 +16,7 @@ to open the adlayer below the button, add the following attribute `data-adlayer-
 
 `<a href="{url}" class="spreadly-button" data-adlayer-position="bottom"></a>`
 
-### Choose service-icons ###
+### Customize social-network-icons ###
 
 you can customize the social-network-icons with the `data-services' attribute. the spreadly button supports the following networks:
 
