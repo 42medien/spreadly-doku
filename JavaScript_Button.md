@@ -26,7 +26,7 @@ you can customize the social-network-icons with the `data-services' attribute. t
 * xing
 * flattr
 * tumblr
-* none (no social-network-icons except the "present")
+* none (no social-network-icons except the "package")
 
 the example:
 
@@ -35,3 +35,5 @@ the example:
 will show the twitter, facebook and xing icon.
 
 the default icons are: facebook, twitter, linkedin
+
+__IMPORTANT: you can't hide the "package" icon__
