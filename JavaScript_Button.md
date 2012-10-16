@@ -17,3 +17,21 @@ to open the adlayer below the button, add the following attribute `data-adlayer-
 `<a href="{url}" class="spreadly-button" data-adlayer-position="bottom"></a>`
 
 ### Choose service-icons ###
+
+you can customize the social-network-icons with the `data-services' attribute. the spreadly button supports the following networks:
+
+* twitter
+* facebook
+* linkedin
+* xing
+* flattr
+* tumblr
+* none (no social-network-icons except the "present")
+
+the example:
+
+`<a href="{url}" class="spreadly-button" data-services="twitter,facebook,xing"></a>`
+
+will show the twitter, facebook and xing icon.
+
+the default icons are: facebook, twitter, linkedin
