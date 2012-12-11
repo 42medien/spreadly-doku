@@ -38,7 +38,11 @@ the default icons are: facebook, twitter, linkedin
 
 __IMPORTANT: you can't hide the "package" icon__
 
-## WordPress example
+## Code examples
+
+### WordPress
+
+Copy and paste this code into a php file, place it in the plugin-directory and activate it.
 
 ```php
 <?php
