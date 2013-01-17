@@ -24,7 +24,3 @@ Here are some plugins with the old name and ci, but they should still work.
 
   * Drupal: http://drupal.org/project/yiid
   * Joomla: http://extensions.joomla.org/extensions/social-web/republish/13589
-
-## Shopping
-
-  * Magento Shopsysteme: http://www.mag-module.de/magento-extension/yiid-it-button
