@@ -10,15 +10,15 @@ at the place, the button should show up. Replace {url} with the URL that should 
 
 ## Optional parameters ##
 
-### Adlayer Position ###
+### Adlayer Position
 
 to open the adlayer below the button, add the following attribute `data-adlayer-position="bottom"` the complete button code should now look like this:
 
 `<a href="{url}" class="spreadly-button" data-adlayer-position="bottom"></a>`
 
-### Customize social-network-icons ###
+### Customize social-network-icons
 
-you can customize the social-network-icons with the `data-services' attribute. the spreadly button supports the following networks:
+you can customize the social-network-icons with the `data-services` attribute. the spreadly button supports the following networks:
 
 * twitter
 * facebook
@@ -30,11 +30,21 @@ you can customize the social-network-icons with the `data-services' attribute. t
 
 the example:
 
-`<a href="{url}" class="spreadly-button" data-services="twitter,facebook,xing"></a>`
+```HTML
+<a href="{url}" class="spreadly-button" data-services="twitter,facebook,xing"></a>
+```
 
 will show the twitter, facebook and xing icon.
 
 the default icons are: facebook, twitter, linkedin
+
+### Show counter
+
+to show the counter you symply have to add `data-counter="true"`.
+
+```HTML
+<a href="{url}" class="spreadly-button" data-counter="true"></a>
+```
 
 __IMPORTANT: you can't hide the "package" icon__
 
