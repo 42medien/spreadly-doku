@@ -21,6 +21,11 @@ to open the adlayer below the button, add the following attribute `data-adlayer-
 ```HTML
 <a href="{url}" class="spreadly-button" data-adlayer-position="bottom"></a>
 ```
+to place the adlayer over the button use the attribute: top
+
+```HTML
+<a href="{url}" class="spreadly-button" data-adlayer-position="top"></a>
+```
 
 ### Customize social-network-icons
 
