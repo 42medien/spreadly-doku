@@ -59,6 +59,23 @@ to show the counter you symply have to add `data-counter="true"`.
 
 __IMPORTANT: you can't hide the "package" icon__
 
+## Custom HTML
+
+To add the layer to a custom button/link, you simply have to add a `class="spreadly-link"` to the element of your choice.
+
+```HTML
+<a href="{url}" class="spreadly-link"></a>
+```
+
+If it is a link (`<a />`) the popup uses the `href`-link to share. If you want to use a div/span/... instead, you can use
+the `data-spreadly-url` attribute to specify the "link to share".
+
+```HTML
+<div data-spreadly-url="{url}" class="spreadly-link"></div>
+```
+
+If there is no `data-spreadly-url` or `href`, the popup will share the url of the address-bar.
+
 ## Code examples
 
 ### WordPress
