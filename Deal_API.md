@@ -1,3 +1,8 @@
+---
+layout: default
+title: Spreadly Doku - Deal API
+---
+
 **NOTE: To use the Deal-API you need an Access-Key! You can request yours here: http://spreadly.com/advertiser/dealapi**
 
 # API endpoint
@@ -18,9 +23,9 @@
 To access the Spread.ly API you have to add the Access-Key (request yours here: http://spreadly.com/advertiser/dealapi) like this:
 
 
-```
+{% highlight html %}
 http://api.spreadly.com/deals?access_token=#your_access_key#
-```
+{% endhighlight %}
 
 # data format
 
@@ -28,7 +33,7 @@ A `POST` has the Content-Type `application/json` and represents a single deal.
 
 ## JSON example (coupon type: code)
 
-```json
+{% highlight json %}
 {
      "name": "Test-Kampagne",
 
@@ -58,7 +63,7 @@ A `POST` has the Content-Type `application/json` and represents a single deal.
       "target_quantity": 10.0
      }
 }
-```
+{% endhighlight %}
 
 The fields:
 
@@ -167,7 +172,7 @@ The coupon **code**:
 
 JSON example:
 
-```json
+{% highlight json %}
 [...]
 "coupon": {
   "type": "code",
@@ -177,7 +182,7 @@ JSON example:
   "redeem_url": "http://example.com/redeem"
 }
 [...]
-```
+{% endhighlight %}
 
 
 The **download** coupon:
@@ -209,7 +214,7 @@ The **download** coupon:
 
 JSON example:
 
-```json
+{% highlight json %}
 [...]
 "coupon": {
   "type": "download",
@@ -218,7 +223,7 @@ JSON example:
   "url": "http://example.com/download"
 }
 [...]
-```
+{% endhighlight %}
 
 The **url** coupon:
 
@@ -249,7 +254,7 @@ The **url** coupon:
 
 JSON example:
 
-```json
+{% highlight json %}
 [...]
 "coupon": {
   "type": "url",
@@ -258,7 +263,7 @@ JSON example:
   "url": "http://example.com/visit"
 }
 [...]
-```
+{% endhighlight %}
 
 ## billing
 

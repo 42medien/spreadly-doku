@@ -1,3 +1,8 @@
+---
+layout: default
+title: Spreadly Doku - List of plugins
+---
+
 A list of Spread.ly-Plugins
 
 # Spread.ly

@@ -1,14 +1,19 @@
-To implement the Spreadly JavaScript Button you have to add the following line to your HTML <head>
+---
+layout: default
+title: Spreadly Doku - Button (JavaScript)
+---
 
-```HTML
+To implement the Spreadly JavaScript Button you have to add the following line to your HTML &lt;head /&gt;
+
+{% highlight html %}
 <script type='text/javascript' src='http://button.spread.ly/js/v1/loader.js'></script>
-```
+{% endhighlight %}
 
 and
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-button"></a>
-```
+{% endhighlight %}
 
 at the place, the button should show up. Replace {url} with the URL that should be shared.
 
@@ -18,14 +23,14 @@ at the place, the button should show up. Replace {url} with the URL that should 
 
 to open the adlayer below the button, add the following attribute `data-adlayer-position="bottom"` the complete button code should now look like this:
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-button" data-adlayer-position="bottom"></a>
-```
+{% endhighlight %}
 to place the adlayer over the button use the attribute: top
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-button" data-adlayer-position="top"></a>
-```
+{% endhighlight %}
 
 ### Customize social-network-icons
 
@@ -41,9 +46,9 @@ you can customize the social-network-icons with the `data-services` attribute. t
 
 the example:
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-button" data-services="twitter,facebook,xing"></a>
-```
+{% endhighlight %}
 
 will show the twitter, facebook and xing icon.
 
@@ -53,9 +58,9 @@ the default icons are: facebook, twitter, linkedin
 
 to show the counter you symply have to add `data-counter="true"`.
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-button" data-counter="true"></a>
-```
+{% endhighlight %}
 
 __IMPORTANT: you can't hide the "package" icon__
 
@@ -63,16 +68,16 @@ __IMPORTANT: you can't hide the "package" icon__
 
 To add the layer to a custom button/link, you simply have to add a `class="spreadly-link"` to the element of your choice.
 
-```HTML
+{% highlight html %}
 <a href="{url}" class="spreadly-link"></a>
-```
+{% endhighlight %}
 
 If it is a link (`<a />`) the popup uses the `href`-link to share. If you want to use a div/span/... instead, you can use
 the `data-spreadly-url` attribute to specify the "link to share".
 
-```HTML
+{% highlight html %}
 <div data-spreadly-url="{url}" class="spreadly-link"></div>
-```
+{% endhighlight %}
 
 If there is no `data-spreadly-url` or `href`, the popup will share the url of the address-bar.
 
@@ -82,8 +87,8 @@ If there is no `data-spreadly-url` or `href`, the popup will share the url of th
 
 Copy and paste this code into a php file, place it in the plugin-directory and activate it.
 
-```php
-<?php
+{% highlight php %}
+&lt;?php
 /*
 Plugin Name: Spreadly JavaScript Button
 Plugin URI: http://spreadly.com
@@ -105,4 +110,4 @@ function spreadly_add_button($content) {
   return $content . $button;
 }
 add_action('the_content', 'spreadly_add_button', 1);
-```
+{% endhighlight %}

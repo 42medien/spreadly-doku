@@ -1,3 +1,8 @@
+---
+layout: default
+title: Spreadly Doku - Examples
+---
+
 a 'How to integrate Spread.ly to a various services'
 
 *How to add Spread.ly to...*
@@ -12,12 +17,12 @@ You can add it through the "personalize" interface: http://www.addthis.com/perso
 
 AddToAny allows you to add some custom services, here is a little example how to add Spread.ly
 
-```html
-<a class="a2a_dd" href="http://www.addtoany.com/share_save">
-    <img src="http://static.addtoany.com/buttons/share_save_171_16.png" border="0" alt="Share"/>
-</a>
+{% highlight html %}
+&lt;a class="a2a_dd" href="http://www.addtoany.com/share_save"&gt;
+    &lt;img src="http://static.addtoany.com/buttons/share_save_171_16.png" border="0" alt="Share"/&gt;
+&lt;/a&gt;
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 var a2a_config = a2a_config || {};
 
 a2a_config.custom_services = [
@@ -26,16 +31,16 @@ a2a_config.custom_services = [
                 "http://spread.ly/favicon.ico"
         ]
 ];
-</script>
+&lt;/script&gt;
 
-<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
-```
+&lt;script type="text/javascript" src="http://static.addtoany.com/menu/page.js">&lt;/script&gt;
+{% endhighlight %}
 
 For more customisation, please visit the AddToAny developer doku: http://www.addtoany.com/buttons/customize/
 
 # Google Reader
 
-Go to "Reader Settings" -> "Send To" and klick "Create a custom link" at the end of the page.
+Go to "Reader Settings" -&gt; "Send To" and klick "Create a custom link" at the end of the page.
 
 Now complete the form like that:
 
@@ -46,7 +51,7 @@ Now complete the form like that:
   </tr>
   <tr>
     <td>URL</td>
-    <td>http://spread.ly/?title=${title}&url=${url}</td>
+    <td>http://spread.ly/?title=${title}&amp;url=${url}</td>
   </tr>
   <tr>
     <td>Icon URL</td>
@@ -58,9 +63,9 @@ Now complete the form like that:
 
 ## Share Daddy
 
-Download and install Share Daddy as described here: http://wordpress.org/extend/plugins/sharedaddy/installation/
+Download and install Share Daddy as described here: <http://wordpress.org/extend/plugins/sharedaddy/installation/>
 
-Go to "Settings" -> "Sharing", click "Add a new service" and fill out the form with the following params:
+Go to "Settings" -&gt; "Sharing", click "Add a new service" and fill out the form with the following params:
 
 <table>
   <tr>
@@ -69,7 +74,7 @@ Go to "Settings" -> "Sharing", click "Add a new service" and fill out the form w
   </tr>
   <tr>
     <td>Sharing URL</td>
-    <td>http://spread.ly/?title=%post_title%&tags=%post_tags%&url=%post_full_url%</td>
+    <td>http://spread.ly/?title=%post_title%&amp;tags=%post_tags%&amp;url=%post_full_url%</td>
   </tr>
   <tr>
     <td>Icon URL</td>
