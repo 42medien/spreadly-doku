@@ -88,7 +88,7 @@ If there is no `data-spreadly-url` or `href`, the popup will share the url of th
 Copy and paste this code into a php file, place it in the plugin-directory and activate it.
 
 {% highlight php %}
-&lt;?php
+<?php
 /*
 Plugin Name: Spreadly JavaScript Button
 Plugin URI: http://spreadly.com

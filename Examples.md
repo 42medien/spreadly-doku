@@ -18,11 +18,11 @@ You can add it through the "personalize" interface: http://www.addthis.com/perso
 AddToAny allows you to add some custom services, here is a little example how to add Spread.ly
 
 {% highlight html %}
-&lt;a class="a2a_dd" href="http://www.addtoany.com/share_save"&gt;
-    &lt;img src="http://static.addtoany.com/buttons/share_save_171_16.png" border="0" alt="Share"/&gt;
-&lt;/a&gt;
+<a class="a2a_dd" href="http://www.addtoany.com/share_save">
+    <img src="http://static.addtoany.com/buttons/share_save_171_16.png" border="0" alt="Share"/>
+</a>
 
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 var a2a_config = a2a_config || {};
 
 a2a_config.custom_services = [
@@ -31,9 +31,9 @@ a2a_config.custom_services = [
                 "http://spread.ly/favicon.ico"
         ]
 ];
-&lt;/script&gt;
+</script>
 
-&lt;script type="text/javascript" src="http://static.addtoany.com/menu/page.js">&lt;/script&gt;
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 {% endhighlight %}
 
 For more customisation, please visit the AddToAny developer doku: http://www.addtoany.com/buttons/customize/
