@@ -134,7 +134,7 @@ In PHP, dots and spaces in query parameter names are converted to underscores au
 
 {% highlight php %}
 <?php
-$method = $_SERVER['REQUEST_METHOD'];  
+$method = $_SERVER['REQUEST_METHOD'];
 
 // verify callback-url
 if ($method == 'GET' &&
@@ -154,5 +154,4 @@ if ($method == 'GET' &&
 } else {
   error_log(print_r(file_get_contents("php://input"), true) . "\n", 3, dirname(__FILE__)."/error.log");
 }
-?>
 {% endhighlight %}
