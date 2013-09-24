@@ -9,9 +9,9 @@ a 'How to integrate Spread.ly to a various services'
 
 # AddThis
 
-Spread.ly is natively supported by AddThis: http://www.addthis.com/services/detail/yiid
+Spread.ly is natively supported by AddThis: <http://www.addthis.com/services/detail/yiid>
 
-You can add it through the "personalize" interface: http://www.addthis.com/personalize
+You can add it through the "personalize" interface: <http://www.addthis.com/personalize>
 
 # AddToAny
 
@@ -36,7 +36,7 @@ a2a_config.custom_services = [
 <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 {% endhighlight %}
 
-For more customisation, please visit the AddToAny developer doku: http://www.addtoany.com/buttons/customize/
+For more customisation, please visit the AddToAny developer doku: <http://www.addtoany.com/buttons/customize/>
 
 # Google Reader
 
