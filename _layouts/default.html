@@ -4,6 +4,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" href="{{ site.baseurl }}css/style.css" />
+    <script type='text/javascript' src='//button.spread.ly/js/v1/loader.js'></script>
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
         </a>
         <p id="tagline">The Spreadly dokumentation</p>
       </div>
-			
+
 			<nav>
 				<ul>
 					<li><a href="{{ site.baseurl }}">Home</a></li>
@@ -31,7 +32,12 @@
       {{ content }}
 
       <footer>
-        <p>This website is in a <a href="https://github.com/ekaabo/spreadly-doku">public git repository</a>. <a href="http://spreadly.com/imprint">Impressum</a></p>
+        <p>
+          This website is in a <a href="https://github.com/ekaabo/spreadly-doku">public git repository</a>.
+          <a href="http://spreadly.com/imprint">Impressum</a>
+
+          <a href="http://dev.spreadly.com" class="spreadly-button" data-style="flat">Share</a>
+        </p>
       </footer>
     </div>
   </body>

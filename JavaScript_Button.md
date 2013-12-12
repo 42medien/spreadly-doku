@@ -17,7 +17,7 @@ and
 
 at the place, the button should show up. Replace {url} with the URL that should be shared.
 
-## Optional parameters ##
+## Optional parameters
 
 ### Adlayer Position
 
@@ -31,6 +31,30 @@ to place the adlayer over the button use the attribute: top
 {% highlight html %}
 <a href="{url}" class="spreadly-button" data-adlayer-position="top"></a>
 {% endhighlight %}
+
+This parameter is optional!
+
+### Button style
+
+With `data-style` you are able to change the "style" of your button.
+
+If missing or set to `classic`
+
+{% highlight html %}
+<a href="{url}" class="spreadly-button" data-style="classic"></a>
+{% endhighlight %}
+
+you get the classic-style: <a href="http://dev.spreadly.com" class="spreadly-button" data-style="classic">Share</a>
+
+If set to `flat`
+
+{% highlight html %}
+<a href="{url}" class="spreadly-button" data-style="flat">Share</a>
+{% endhighlight %}
+
+you get a modern flat designed button: <a href="http://dev.spreadly.com" class="spreadly-button" data-style="flat">Share</a>
+
+This parameter is optional!
 
 ### Customize social-network-icons
 
@@ -52,7 +76,7 @@ the example:
 
 will show the twitter, facebook and xing icon.
 
-the default icons are: facebook, twitter, linkedin
+This parameter is optional, the default icons are: facebook, twitter, linkedin
 
 ### Show counter
 
@@ -61,6 +85,8 @@ to show the counter you symply have to add `data-counter="true"`.
 {% highlight html %}
 <a href="{url}" class="spreadly-button" data-counter="true"></a>
 {% endhighlight %}
+
+This parameter is optional!
 
 __IMPORTANT: you can't hide the "package" icon__
 
@@ -101,7 +127,7 @@ License: GPLv2 or later
 
 function spreadly_scripts_method() {
   wp_enqueue_script( 'spreadly-share', 'http://button.spread.ly/js/v1/loader.js' );
-}    
+}
 add_action('wp_enqueue_scripts', 'spreadly_scripts_method');
 
 function spreadly_add_button($content) {

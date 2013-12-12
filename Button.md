@@ -3,15 +3,13 @@ layout: default
 title: Spreadly Doku - Button (iFrame)
 ---
 
-This document is intended for developers who want to write applications that can interact with the Spreadly Button API
-
 # Getting Started
 
 The Spread.ly button is a tool to share content in several social networks simultanously. This content can also be deals of many sorts that give incentives to the user for liking an item. You can use the Spread.ly button API to customize many aspects of the sharing experience for your users.
 
 # Mandatory Parameters
 
-Mandatory parameters are the minimum requirement for the button to work. You should set them programmatically for your software (cms, blog or online shop software) - otherwise you would need to configure each button manually for every separate page (url). 
+Mandatory parameters are the minimum requirement for the button to work. You should set them programmatically for your software (cms, blog or online shop software) - otherwise you would need to configure each button manually for every separate page (url).
 
 <table>
   <tr>
@@ -29,7 +27,7 @@ Mandatory parameters are the minimum requirement for the button to work. You sho
 _iFrame_:
 
 {% highlight html %}
-<iframe src="http://button.spread.ly/?url={url}&social={1|0}" 
+<iframe src="http://button.spread.ly/?url={url}&social={1|0}"
         style="overflow:hidden; width: 420px; height: 30px; padding: 0px 0;"
         frameborder="0"
         scrolling="no"
@@ -41,7 +39,7 @@ _iFrame_:
 _link_:
 
 {% highlight html %}
-<a href="http://spread.ly/?url={url}" 
+<a href="http://spread.ly/?url={url}"
    target="_blank"
    rel="like">
   <img src="http://spreadly.com/img/staticbutton.png"
@@ -78,7 +76,7 @@ Optional parameters can enhance the user experience decidedly, by giving you mor
 _iFrame_:
 
 {% highlight html %}
-<iframe src="http://button.spread.ly/?url={url}&social={1|0}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}" 
+<iframe src="http://button.spread.ly/?url={url}&social={1|0}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}"
         style="overflow:hidden; width: 420px; height: 30px; padding: 0px 0;"
         frameborder="0"
         scrolling="no"
@@ -90,7 +88,7 @@ _iFrame_:
 _link_:
 
 {% highlight html %}
-<a href="http://button.spread.ly/?url={url}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}" 
+<a href="http://button.spread.ly/?url={url}&title={title}&description={description}&photo={photo-url}&tags={tag,tag}"
    target="_blank"
    rel="like">
   <img src="http://spreadly.com/img/staticbutton.png"
@@ -138,7 +136,7 @@ A complete example how a share button/link could look like. Sample page: http://
 _iFrame_:
 
 {% highlight html %}
-<iframe src="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&social=1&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare" 
+<iframe src="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&social=1&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare"
         style="overflow:hidden; width: 420px; height: 60px; padding: 0px 0;"
         frameborder="0"
         scrolling="no"
@@ -150,7 +148,7 @@ _iFrame_:
 _link_:
 
 {% highlight html %}
-<a href="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare" 
+<a href="http://button.spread.ly/?url=http%3A%2F%2Fspreadly.com%2F&title=Spread.ly&description=first%20choice%20for%20social%20sharing&photo=http%3A%2F%2Fspreadly.com%2Fimg%2Fspreadlyicon.jpg&tags=like%2Cdeal%2Cspread%2Cshare"
    target="_blank"
    rel="like">
   <img src="http://spreadly.com/img/staticbutton.png"
